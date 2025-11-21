@@ -1,0 +1,20 @@
+$fondo: black;
+$letras: red;
+$secundario: orange;
+
+html {
+	font-size: 13px;
+}
+
+body {
+  background-color: $fondo;
+  color: $letras;
+}
+
+h1 {
+  color: $secundario;
+}
+
+.card:hover{
+  box-shadow: #0c0c0c3b;
+}

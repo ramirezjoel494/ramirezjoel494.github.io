@@ -1,0 +1,1986 @@
+html {
+  font-size: 13px; 
+  height: 100%;
+  margin: 0;
+}
+
+.card:hover {
+  -webkit-box-shadow: #0c0c0c3b;
+          box-shadow: #0c0c0c3b; }
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.ratio {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* opcional */
+}
+
+
+/* Fondo main*/
+main {
+  background-color: rgb(253, 252, 252);
+}
+
+
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, .container_fluid {
+  padding: 0;
+  width: 100%;
+}
+
+
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  max-width: 100% !important;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.3rem; /* Ajusta este valor al tamaño que prefieras */
+}
+/*# sourceMappingURL=estilos.css.map */
+
+.contenedor-espaciado {
+  margin-bottom: 3rem; /* Ajusta el valor según el espacio deseado */
+}
+
+.contenedorsito {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  gap: 20px; /* Espacio entre texto e imagen */
+  margin-bottom: 30px; /* Separación entre contenedores si hay varios */
+}
+
+.texto {
+  flex: 1; /* Ocupa el espacio disponible */
+}
+
+.imagen img {
+  max-width: 300px; /* Ajusta el tamaño máximo de la imagen */
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Opcional: bordes redondeados */
+}
+
+button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 10px;
+}
+button:hover {
+      background-color: #0056b3;
+}
+
+
+
+
+/* Tarjetas*/
+.card {
+  border-radius: 15px;
+ 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 220px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-title {
+  font-weight: 700;
+  color: #1976d2;
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+}
+
+.card-text ul {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 1rem;
+  color: #555;
+  font-size: 1rem;
+}
+
+.card-text ul li {
+  margin-bottom: 0.4rem;
+}
+
+/* Botón */
+.btn-primary {
+  background-color: #202122;;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #202122;
+}
+
+
+
+
+.contenedor-espaciado {
+  font-size: 1.25rem;          /* Tamaño de fuente más grande */
+  line-height: 1.7;            /* Mejor interlineado para lectura */
+  color: black;                 /* Color de texto oscuro suave */
+  background-color: white;   /* Fondo muy claro para contraste */
+  padding: 25px 30px;          /* Espaciado interno */
+  border-radius: 12px;         /* Bordes redondeados */
+  
+  font-weight: 500;            /* Peso de fuente medio */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+/* Iconos de contacto y pie de pagina */
+
+.iconos-contacto {
+  position: absolute;
+  bottom: 50px; /* distancia desde la parte inferior de la imagen */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 8;
+  padding: 5px 15px;
+  border-radius: 30px;
+}
+
+.icono-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin: 0 5px;
+}
+
+/* Colores de cada red social */
+.icono-circle.instagram {
+  background: #E1306C;
+}
+
+.icono-circle.instagram:hover {
+  background: #c1275b;
+}
+
+.icono-circle.whatsapp {
+  background: #25D366;
+}
+
+.icono-circle.whatsapp:hover {
+  background: #1ebe5b;
+}
+
+.icono-circle.github {
+  background: #171515;
+}
+
+.icono-circle.github:hover {
+  background: #000000; /* un negro más puro para el hover */
+}
+
+.icono-circle.linkedin {
+  background: #0077b5;
+}
+
+.icono-circle.linkedin:hover {
+  background: #005983;
+}
+
+.pie-de-pagina {
+  position: relative; /* clave para que absolute funcione dentro */
+  background-color: #222;
+  color: white;
+  padding: 60px 0 80px; /* deja espacio abajo para iconos */
+  text-align: center;
+}
+.iconos-contacto {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.iconos-contacto-2 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+.iconos-contacto a {
+    display: inline-flex;
+    align-items: bottom;
+    justify-content: bottom;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+}
+  .iconos-contacto-2 a.instagram:hover {
+    background-color: #E1306C;
+  }
+  .iconos-contacto-2 a.whatsapp:hover {
+    background-color: #25D366;
+  }
+  .iconos-contacto-2 a.github:hover {
+    background-color: #0088cc;
+  }
+  .iconos-contacto-2 a.linkedin:hover {
+    background-color: #0077b5;
+  }
+
+.imagen-fondo {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Inicio*/
+
+
+/* Carrusel */
+
+/* Contenedores sin padding ni margen para ancho completo */
+.container-fluid.px-0 > .row,
+.container-fluid.px-0 > .row > .col-12 {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+#carouselQuienSoy {
+  position: relative; /* necesario para posicionar el pseudo-elemento */
+  overflow: visible; /* para que el borde pueda sobresalir */
+  border-bottom: none; /* quitamos el borde normal */
+}
+
+#carouselQuienSoy::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 10px; /* grosor de la línea */
+  background-color: #a8d0ff; /* color azul claro */
+  bottom: 20px; /* distancia desde el fondo del carrusel hacia arriba */
+  border-radius: 5px 5px 0 0; /* bordes redondeados arriba */
+  pointer-events: none; /* para que no interfiera con clicks */
+  z-index: 10;
+}
+
+#carouselQuienSoy img {
+  height: auto; /* o usa un max-height si quieres limitar */
+  max-height: 80vh; /* máximo 60% de la altura de la ventana */
+  object-fit: cover; /* recorta la imagen para llenar el contenedor */
+  width: 100%;
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3.5rem;   /* tamaño suficiente para ser visibles */
+  height: 3.5rem;
+  z-index: 20;     /* asegúrate que estén por encima */
+  background-color: rgba(241, 237, 237, 0.3); /* fondo semitransparente para visibilidad */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  outline: none;
+  box-shadow: none;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+  background-color: rgba(248, 246, 246, 0.5) !important; /* fondo más oscuro al hover/focus */
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.carousel-control-prev {
+  left: 1rem;
+}
+
+.carousel-control-next {
+  right: 1rem;
+}
+
+/* Iconos */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+  width: 2rem;
+  height: 2rem;
+}
+
+.btn-overlay {
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  opacity: 0.6;
+}
+
+.btn-overlay:hover {
+  opacity: 1;
+}
+
+/* Responsive: ajusta tamaño y posición */
+@media (max-width: 576px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .carousel-control-prev {
+    left: 0.5rem;
+  }
+  .carousel-control-next {
+    right: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #carouselQuienSoy img {
+    max-height: 200vh;
+    padding-top: 3rem;
+  }
+
+  .btn-overlay {
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  opacity: 0.6;
+  }
+
+  #carouselQuienSoy::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 10px; /* grosor de la línea */
+  background-color: #a8d0ff; /* color azul claro */
+  bottom: 18px; /* distancia desde el fondo del carrusel hacia arriba */
+  border-radius: 5px 5px 0 0; /* bordes redondeados arriba */
+  pointer-events: none; /* para que no interfiera con clicks */
+  z-index: 10;
+}
+}
+
+/* Boton ver mas */
+
+.destacado {
+  animation: resaltar 3s ease;
+  background-color: #e7f1ff;
+}
+
+@keyframes resaltar {
+  0% { background-color: #e7f1ff; }
+  100% { background-color: transparent; }
+}
+
+
+
+
+
+.inicio-fondo {
+  width: 100%;
+  max-width: 2200px; /* igual que tu contenedor principal */
+  margin: 0 auto;
+  height: 100%; /* o la altura que quieras */
+  
+  /* Degradado radial más amplio y oscuro */
+  background-image:
+  radial-gradient(circle at center, rgba(14, 15, 15, 0.98) 0%, rgba(14, 15, 15, 0) 98%),
+  url('python.jpg');
+
+  
+  background-size: cover;       /* cubre todo el contenedor */
+  background-position: center;  /* centra la imagen */
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 0; /* opcional, para separar contenido del borde */
+  box-sizing: border-box;
+}
+
+/* Capa semitransparente adicional si quieres oscurecer más */
+.inicio-fondo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.4); /* capa semitransparente */
+  z-index: 1;
+}
+
+.inicio-fondo > * {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+
+/* Bienvenida en el inicio */
+
+.filosofia {
+margin-top: -2%;
+border: none
+}
+
+
+.bienvenida {
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+  background: none; /* si quieres quitar fondo blanco */
+}
+
+/* Texto a la izquierda */
+.welcome-text {
+  background: linear-gradient(to right, transparent 0%, #1b263b 0%, #0d1b2a 100%);
+  color: #e0e6f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 4rem;
+  border-radius: 12px 0 0 12px;
+  position: relative;
+}
+
+/* Botón dentro del texto */
+.btn-acerca {
+        /* para que tome todo el ancho disponible */
+  margin: 0 auto;       /* margen automático a izquierda y derecha */
+  max-width: max-content; /* para que el ancho se ajuste al con */
+}
+
+/* Carrusel a la derecha */
+.welcome-carousel { 
+  border-radius: 0 12px 12px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Imágenes del carrusel */
+.carousel-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  top: 0;
+  left: 0;
+  border-radius: 0 12px 12px 0;
+}
+
+.carousel-image.active {
+  opacity: 1;
+  position: relative;
+}
+
+/* Responsive: apilar en pantallas pequeñas */
+@media (max-width: 767.98px) {
+  .bienvenida {
+    flex-direction: column;
+  }
+  .welcome-text, .welcome-carousel {
+    flex: 1 1 100% !important;
+    border-radius: 12px;
+    margin-left: 0 !important;
+    min-height: auto;
+  }
+  .welcome-carousel {
+    margin-top: 1.5rem;
+    height: 250px;
+  }
+}
+
+
+
+
+/* Carrusel para proyectos  */
+
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.carousel-wrapper {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 40px; /* margen lateral */
+  }
+
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 1rem 0;
+    scroll-behavior: smooth;
+  }
+
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel > article {
+    flex: 0 0 300px;
+    scroll-snap-align: start;
+    border-radius: 10px;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+
+  /* Flechas */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .arrow-left {
+    left: 10px;
+  }
+
+  .arrow-right {
+    right: 10px;
+  }
+
+  .carousel > article {
+  flex: 0 0 197px;
+  scroll-snap-align: start;
+  border-radius: 10px;
+  
+}
+
+.card-img-top {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 0.5rem 0.75rem;
+}
+
+/* En pantallas medianas: 50% (2 tarjetas) */
+@media (max-width: 992px) {
+  .carousel > article {
+    flex: 0 0 32%;
+  }
+}
+
+/* En pantallas pequeñas: 100% (1 tarjeta) */
+@media (max-width: 576px) {
+  .carousel > article {
+    flex: 0 0 48%;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* acerca de */
+
+.acerca {
+  position: relative;
+  background-image: url('python.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  overflow: hidden;
+}
+
+.acerca::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 0;
+}
+
+.acerca > .container,
+.acerca > .container > .row,
+.acerca > .container > .row > .col-12 {
+  position: relative;
+  z-index: 1;
+}
+
+/* Borde con degradado sutil */
+
+
+/* Imagen de fondo con opacidad */
+  .background-image {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('portfolio.jpg'); /* Cambia por tu imagen */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2; /* Ajusta la opacidad aquí */
+    z-index: 0;
+    border-radius: 20px;
+  }
+
+  /* Texto con sombra */
+  .texto-gradiente {
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+  }
+
+  @media (max-width: 576px) {
+  article {
+    margin-bottom: 4rem !important;
+  }
+}
+
+
+
+
+
+
+
+
+/* Proyectos */
+
+.proyectos-fondo {
+  width: 100%;
+  max-width: 1800px; /* igual que tu contenedor principal */
+  margin: 0 auto;
+  height: 100%; /* o la altura que quieras */
+  background-image: url('fondo-fondo-01.jpg'); /* cambia por tu imagen */
+  background-size: cover;       /* cubre todo el contenedor */
+  background-position: center;  /* centra la imagen */
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 0; /* opcional, para separar contenido del borde */
+  box-sizing: border-box;
+}
+
+.contenedorsito {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#contenedorProyectos {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 1rem; /* agrega un poco de padding horizontal para pantallas pequeñas */
+  box-sizing: border-box;
+}
+
+.contenedorsito.proyecto {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  background: #f9f9f9;
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* sombra suave para destacar */
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 2px solid transparent; /* para animar borde al hover */
+  cursor: default;
+}
+
+.contenedorsito.proyecto:hover {
+  border-color: #7fafe6;
+  box-shadow: 0 4px 16px rgba(74, 144, 226, 0.3);
+  cursor: pointer;
+}
+
+.contenedorsito.proyecto .texto {
+  flex: 1 1 400px;
+  min-width: 280px; /* evita que el texto se haga demasiado pequeño */
+}
+
+.contenedorsito.proyecto .texto h2 {
+  margin-top: 0;
+  font-weight: 700;
+  color: #333;
+}
+
+.contenedorsito.proyecto .texto h4 {
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.contenedorsito.proyecto .texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.contenedorsito.proyecto .imagen {
+  flex: 0 0 320px;
+  max-width: 1000px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.contenedorsito.proyecto .imagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.contenedorsito.proyecto .imagen:hover {
+  transform: scale(1.05);
+}
+
+.contenedorsito.proyecto button.btn {
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contenedorsito.proyecto button.btn:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+/* Responsive: en pantallas pequeñas apila verticalmente */
+@media (max-width: 768px) {
+
+  .contenedorsito {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contenedorsito .imagen {
+    order: 1; /* Primero la imagen */
+    width: 100%;
+  }
+
+  .contenedorsito .texto {
+    order: 2; /* Después el texto con botón */
+  }
+
+  /* Centrar el botón dentro del texto */
+  .contenedorsito .texto button {
+    display: block;
+    margin: 1rem auto 0 auto;
+  }
+
+  .contenedorsito.proyecto {
+    flex-direction: column;
+    text-align: justify;
+    padding: 1.5rem 1rem;
+  }
+  .contenedorsito.proyecto .imagen {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 1rem;
+    box-shadow: none;
+    transform: none !important;
+  }
+  .contenedorsito.proyecto .texto {
+    flex: none;
+    min-width: auto;
+  }
+}
+
+/* Ajustes para móviles muy pequeños */
+@media (max-width: 480px) {
+  .contenedorsito.proyecto .texto p {
+    font-size: 1rem;
+  }
+  .contenedorsito.proyecto button.btn {
+    width: 100%;
+    padding: 0.7rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Servicios */
+
+.imagen-fondo {
+  width: auto;
+  height: auto;
+  display: block; /* elimina espacios debajo de la imagen */
+}
+
+
+.contenedor {
+  position: relative;
+  width: 100%;
+  max-width: 2200px; /* ancho máximo del contenedor */
+  margin: 0 auto;
+  padding: 0;
+  height: 100vh; /* altura fija que quieres */
+  overflow: hidden;
+}
+
+.imagen-fondo {
+  width: 100%;      /* ancho al 100% del contenedor */
+  max-width: 100%;  /* no se pase del contenedor */
+  height: 100%;     /* altura completa del contenedor */
+  display: block;
+  object-fit: cover; /* cubre sin deformar */
+  border-radius: 0;
+}
+
+
+.boton-encima {
+  position: absolute;
+  top: 88%; /* usa porcentaje para que se adapte */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+
+.iconos-contacto {
+  position: absolute;
+  bottom: 15%; /* posición relativa a la imagen */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  z-index: 10;
+}
+
+/* Ajustes para los iconos */
+.icono-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #eee;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.icono-circle:hover,
+.icono-circle:focus {
+  background-color: #4a90e2;
+  color: white;
+  outline: none;
+}
+
+/* Responsive: en pantallas pequeñas, ajusta el botón y los iconos */
+@media (max-width: 768px) {
+  .contenedor {
+    height: 50vh; /* menos altura en tablets/móviles */
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedor {
+    height: 40vh; /* menos altura en móviles pequeños */
+  }
+}
+
+
+
+
+/* Catalogo */
+
+.cat{
+  margin-top: -7rem;
+}
+
+
+.proyectos-horizontal {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  flex-direction: column;  /* Para que el contenido quede en columna */
+  align-items: center;     /* Centra horizontalmente los elementos hijos */
+  text-align: center;      /* Centra el texto dentro de los elementos */
+  padding-left: 7rem;
+}
+
+.horizontal-scroll {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto; /* permite scroll horizontal */
+  padding-bottom: 1rem;
+  overflow-y: hidden; /* evita scroll vertical */
+  height: 320px; /* altura fija para contener las imágenes */
+  scrollbar-width: thin; /* para Firefox: scrollbar más delgada */
+  scrollbar-color: #141414 #e0e0e0; /* color de scrollbar */
+}
+
+/* Estilos para scrollbars en Webkit (Chrome, Edge, Safari) */
+.proyectos-horizontal .horizontal-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+.proyectos-horizontal .horizontal-scroll::-webkit-scrollbar-track {
+  background: #e0e0e0;
+  border-radius: 8px;
+}
+.proyectos-horizontal .horizontal-scroll::-webkit-scrollbar-thumb {
+  background-color: #141414;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+}
+
+.proyectos-horizontal .item {
+  position: relative;
+  cursor: pointer;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  border-radius: 16px; /* bordes redondeados */
+  overflow: hidden; /* para que el contenido respete el borde redondeado */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  flex-shrink: 0; /* evita que los items se encojan en flexbox */
+  width: 280px; /* ancho fijo para que el scroll funcione bien */
+}
+
+.proyectos-horizontal .item img {
+  width: 100%;
+  height: 300px; /* altura fija */
+  object-fit: cover;
+  display: block;
+  border-radius: 16px 16px 0 0; /* bordes redondeados arriba */
+  transition: transform 0.3s ease;
+}
+
+.proyectos-horizontal .item:hover img {
+  transform: scale(1.05); /* zoom suave al pasar el cursor */
+}
+
+.proyectos-horizontal .item .overlay {
+  pointer-events: none; /* para que no bloquee el clic */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:#141414;
+
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 16px 16px; /* bordes redondeados abajo */
+}
+
+.proyectos-horizontal .item:hover .overlay {
+  opacity: 1;
+}
+
+/* Estado activo al hacer click */
+.proyectos-horizontal .item.active {
+  flex: 1 1 100%; /* ocupa todo el ancho disponible */
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+  z-index: 10;
+  transform: scale(1.05);
+}
+
+.proyectos-horizontal .item:not(.active) {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Estilo para el contenedor de info completa */
+.info-completa {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 2px solid #141414;
+  border-radius: 16px;
+  background-color: #f0f8ff;
+  font-size: 1.1rem;
+  color: #003366;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: opacity 0.3s ease;
+}
+
+/* En pantallas medianas: 2 imágenes visibles */
+@media (max-width: 992px) {
+  .horizontal-scroll .item {
+    flex: 0 0 49%;
+  }
+}
+
+/* En pantallas pequeñas: 1 imagen visible */
+@media (max-width: 576px) {
+  .horizontal-scroll .item {
+    flex: 0 0 31%;
+  }
+
+  .proyectos-horizontal {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  flex-direction: column;  /* Para que el contenido quede en columna */
+  align-items: center;     /* Centra horizontalmente los elementos hijos */
+  text-align: center;      /* Centra el texto dentro de los elementos */
+  padding-left: 0rem;
+}
+
+.cat{
+  margin-top: 8rem;
+}
+}
+
+
+/* Carrusel servicios */
+
+#carruselQuienSoyWrapper #carouselQuienSoy {
+  position: relative;
+  overflow: visible;
+  border-bottom: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-color: #f9faff;
+}
+
+#carruselQuienSoyWrapper #carouselQuienSoy::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  height: 8px;
+  background: linear-gradient(90deg, #4a90e2, #50e3c2);
+  bottom: 15px;
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+#carruselQuienSoyWrapper #carouselQuienSoy img {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  transition: transform 0.4s ease;
+}
+
+#carruselQuienSoyWrapper #carouselQuienSoy .carousel-item.active img {
+  transform: scale(1.02);
+}
+
+#carruselQuienSoyWrapper .carousel-control-prev,
+#carruselQuienSoyWrapper .carousel-control-next {
+  width: 4rem;
+  height: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(74, 144, 226, 0.7);
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.5);
+  transition: background-color 0.3s ease;
+  z-index: 20;
+}
+
+#carruselQuienSoyWrapper .carousel-control-prev:hover,
+#carruselQuienSoyWrapper .carousel-control-next:hover,
+#carruselQuienSoyWrapper .carousel-control-prev:focus,
+#carruselQuienSoyWrapper .carousel-control-next:focus {
+  background-color: rgba(74, 144, 226, 0.9);
+  outline: none;
+  box-shadow: 0 6px 16px rgba(74, 144, 226, 0.7);
+}
+
+#carruselQuienSoyWrapper .carousel-control-prev {
+  left: 1.5rem;
+}
+
+#carruselQuienSoyWrapper .carousel-control-next {
+  right: 1.5rem;
+}
+
+#carruselQuienSoyWrapper .carousel-control-prev-icon,
+#carruselQuienSoyWrapper .carousel-control-next-icon {
+  filter: invert(1);
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #carruselQuienSoyWrapper #carouselQuienSoy img {
+    height: 37vh;
+  }
+  #carruselQuienSoyWrapper .carousel-control-prev,
+  #carruselQuienSoyWrapper .carousel-control-next {
+    width: 3rem;
+    height: 3rem;
+  }
+  #carruselQuienSoyWrapper .carousel-control-prev-icon,
+  #carruselQuienSoyWrapper .carousel-control-next-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  #carruselQuienSoyWrapper .carousel-control-prev {
+    left: 1rem;
+  }
+  #carruselQuienSoyWrapper .carousel-control-next {
+    right: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #carruselQuienSoyWrapper img {
+    height: 100vh;
+  }
+  
+  #carruselQuienSoyWrapper{
+   margin-top: -5rem;
+    }
+
+    #carruselQuienSoyWrapper .iconos-contacto .boton-encima{
+      height: 10vh;
+    }
+
+  .btn-overlay {
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  opacity: 0.6;
+  }
+
+  #carruselQuienSoyWrapper::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 10px; /* grosor de la línea */
+  bottom: 18px; /* distancia desde el fondo del carrusel hacia arriba */
+  pointer-events: none; /* para que no interfiera con clicks */
+  z-index: 10;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Servicios */
+
+/* Carrusel pequeño */
+
+.carrusel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%; /* que no se salga del contenedor padre */
+}
+
+.carrusel-track {
+  display: flex;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.carrusel-track img {
+  flex-shrink: 0;
+  width: 200px; /* ancho base para desktop */
+  height: auto;
+  margin-right: 1rem;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Botones */
+.carrusel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(74, 144, 226, 0.7);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.carrusel-btn.prev {
+  left: 10px;
+}
+
+.carrusel-btn.next {
+  right: 10px;
+}
+
+.carrusel-btn:hover {
+  background-color: rgba(74, 144, 226, 0.9);
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .carrusel-track img {
+    width: 140px; /* imágenes más pequeñas en tablets */
+    margin-right: 0.7rem;
+  }
+  .carrusel-btn {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carrusel-track img {
+    width: 100px; /* imágenes más pequeñas en móviles */
+    margin-right: 0.5rem;
+  }
+  .carrusel-btn {
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+  }
+}
+
+
+
+/* Paginita perfil negra */
+
+.perfil-principal {
+  max-width: 800px;
+  height: 100%;
+  margin: 40px auto;
+  padding: 30px 40px;
+  background-color: #222;
+  color: #eee;
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+/* Primera fila */
+.titulo-principal h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+  color: white; /* azul claro */
+  font-weight: 700;
+}
+
+.titulo-principal h3 {
+  font-weight: 400;
+  font-size: 18px;
+  color: #ccc;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.titulo-principal hr {
+  border: none;
+  border-top: 2px solid white;
+  margin-bottom: 30px;
+  width: 60px;
+}
+
+/* Segunda fila: dos columnas */
+.contenido-dos-columnas {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.columna {
+  flex: 1 1 300px;
+}
+
+/* Foto */
+.foto-columna {
+  display: flex;
+  justify-content: center;
+}
+
+.foto-perfil {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #64b5f6;
+  box-shadow: 0 0 15px #64b5f6aa;
+}
+
+/* Objetivo */
+.objetivo-columna h2 {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.objetivo-columna p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+/* Tercera fila: habilidades */
+.habilidades-fila h2 {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center; /* centra el texto horizontalmente */
+}
+
+.habilidades-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  text-align: center;
+}
+
+.habilidades-lista li {
+  background-color: #64b5f6;
+  color: #222;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(100, 181, 246, 0.6);
+  font-size: 14px;
+  text-align: center;
+}
+
+.welcomee-carousel {
+  margin-top: 2.8rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.carousel-image {
+  height: 100%;
+  width: auto;
+  object-fit: contain; /* o cover si quieres que rellene */
+  display: none;
+}
+
+.carousel-image.active {
+  display: block;
+}
+
+@media (max-width: 700px) {
+
+  .col-12 {
+    padding-left: 0.5rem; /* opcional para algo de espacio interno */
+    margin-top: 2rem;
+  }
+  .d-none.d-md-block {
+    display: none !important; /* Oculta columna vacía en móvil */
+  }
+
+}
+
+
+
+
+
+.contenedor_perfil {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* sombra suave */
+  padding: 20px; /* opcional, para que el contenido no quede pegado a los bordes */
+  border-radius: 8px; /* opcional, bordes redondeados para mejor estética */
+  background-color: #fff; /* opcional, fondo blanco para que la sombra se note bien */
+}
+
+
+.conteneitor {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    margin-bottom: 25px;
+    overflow: hidden;
+    max-width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+  /* Animación al hacer hover */
+.conteneitor:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+.conteneitor img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.contenido {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido h2 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.contenido ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #555;
+}
+
+.contenido ul li {
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+  /* Animación de entrada suave */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+.conteneitor {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column; /* Si quieres que estén uno debajo del otro */
+  align-items: center;    /* Centra horizontalmente */
+  gap: 20px;              /* Espacio entre contenedores */
+  padding: 20px;
+}
+
+
+  .fondo-contenedor {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    background-image: url('map.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    padding: 40px 20px;
+  }
+
+  /* Contenedor de la tarjeta con sombra */
+  .tarjeta {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  }
+
+  /* Parte izquierda: icono o imagen LinkedIn */
+  .tarjeta .linkedin {
+    background-color: #0077b5; /* Color LinkedIn */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .tarjeta .linkedin:hover {
+    background-color: #005983;
+  }
+
+  .tarjeta .linkedin img {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* Parte derecha: datos */
+  .tarjeta .datos {
+    padding: 20px 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tarjeta .datos h2 {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+    color: #222;
+  }
+
+  .tarjeta .datos p {
+    margin: 4px 0;
+    font-size: 16px;
+    color: #555;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Experiencias */
+
+.destacado {
+  border: 3px solid #0d6efd; /* color azul Bootstrap */
+  box-shadow: 0 0 15px rgba(13, 110, 253, 0.7);
+  transition: box-shadow 0.3s ease;
+  margin-top: 7rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Mi perfil */
+
+.contenedor_perfil h2 {
+  color: #202122; /* azul intenso */
+  font-weight: 700;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #202122;;
+  padding-bottom: 0.3rem;
+}
+
+.contenedor_perfil p.h3 {
+  font-weight: 400;
+  color: #444;
+  background-color: #f0f4ff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.contenedor-titulos {
+  text-align: center; /* Centra el título */
+}
+
+.contenedor-titulos h3 {
+  color: #202122; /* azul intenso */
+  font-weight: 1000;
+  margin-bottom: 1rem;
+  padding-bottom: 0.3rem;
+  font-size: 2rem;
+  line-height: 1.6;
+
+  display: inline-block;  /* Ajusta el ancho al texto */
+  position: relative;     /* Para posicionar el ::after */
+}
+
+
+
+
+
+.perfil-card {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna y legible */
+  font-size: 18px;       /* Tamaño de fuente cómodo para lectura */
+  color: #222;           /* Color oscuro para buen contraste */
+  line-height: 1.6;      /* Espaciado entre líneas para mejor legibilidad */
+  font-weight: 400;      /* Peso normal, puedes usar 300 o 500 según prefieras */
+}
+.perfil-card h2 {
+  font-weight: 700;      /* Negrita para el título */
+  margin-bottom: 0.5rem; /* Espacio debajo del título */
+  color: #0f0f0f;        /* Color azul oscuro para destacar */
+}
+.perfil-card p {
+  margin: 0 1rem;        /* Margen horizontal para separar del borde */
+}
+
+
+
+
+
+/* Tarjeta github*/
+
+.cards {
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgb(25 118 210 / 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  max-width: 220px;      /* Limita el ancho */
+  min-width: 220px;      /* Opcional: ancho mínimo */
+  margin-top: 3rem;        /* Centra la tarjeta si es necesario */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards-img-top {
+  object-fit: cover;
+  height: 120px;         /* Reduce la altura de la imagen */
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.cards-body {
+  padding: 1rem;         /* Menos padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cards-title {
+  font-weight: 700;
+  color: #1976d2;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;     /* Más pequeño */
+}
+
+.cards-text ul {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0.7rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.cards-text ul li {
+  margin-bottom: 0.3rem;
+}
+
+.cards:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 16px 40px rgb(25 118 210 / 0.25);
+}
+
+/* Botón */
+.btn-primary {
+  background-color: #202122;;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #202122;
+}
+
+
+
+
+
+
+
+.buttons button {
+  position: relative;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+/* Tooltip container */
+.buttons button::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 110%; /* position above the button */
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+/* Show tooltip on hover */
+.buttons button:hover::after {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+  grid-template-rows: repeat(2, auto);  /* 2 filas */
+  gap: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 66.66%; /* Mantiene proporción 3:2 (600x400) */
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.image-container img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* cubre el contenedor sin deformar */
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.image-container:hover img {
+  filter: brightness(50%);
+  transform: scale(1.05);
+}
+
+.info-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.image-container:hover .info-overlay {
+  opacity: 1;
+}
+
+
+.buttons {
+    margin-bottom: 20px;
+    text-align: center; /* Centra los botones horizontalmente */
+}
+
+.buttons button {
+    width: 50px;       /* Ancho fijo */
+    height: 50px;      /* Alto igual al ancho para que sea círculo */
+    margin: 0 10px;    /* Margen horizontal para separación */
+    cursor: pointer;
+    border-radius: 50%; /* Hace el botón circular */
+    border: none;       /* Quita borde */
+    background-color: #007BFF; /* Color de fondo */
+    display: inline-flex; /* Para centrar contenido */
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Quita padding para que la imagen ocupe bien el espacio */
+    transition: background-color 0.3s ease;
+}
+
+.buttons button img {
+    width: 60%;   /* Ajusta tamaño de la imagen dentro del botón */
+    height: 60%;
+    object-fit: contain;
+    pointer-events: none; /* Para que el clic pase al botón, no a la imagen */
+}
+
+.buttons button:hover {
+    background-color: #0056b3; /* Color al pasar el cursor */
+}
+
+
+
+.resaltado {
+  border: 3px solid #0d6efd; /* azul bootstrap */
+  box-shadow: 0 0 15px #0d6efd;
+  transition: box-shadow 0.3s ease;
+}
+

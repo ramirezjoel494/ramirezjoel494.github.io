@@ -8,4 +8,4 @@ Proyectos:
 
 También visualizarás mis medios de contacto y algunos datos curiosos. 
 
-![image](https://github.com/ramirezjoel494/sitio/blob/main/portfolio.jpg)
+![image](https://github.com/ramirezjoel494/ramirezjoel494.github.io/blob/main/portfolio.jpg)
